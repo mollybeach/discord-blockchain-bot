@@ -1,16 +1,30 @@
-const Moralis = require("moralis").default;
+const express = require("express");
+const port = 3000;
+const app = express();
+
+app.use(express.json());
+app.post("/webhook", async (request, response) => {
+    const {body} = request;
+    console.log(body);
+    return response.status(200).json();
+});
+
+app.listen(port, () => {
+    console.log(`listening to streams........`);
+});
+/*const Moralis = require("moralis").default;
 const express = require("express");
 const discord = require("discord.js");
 require("dotenv").config();
 const port = 3000;
-const app = express();
-
+const app = express();*/
+/*
 const client = new discord.Client({
     intents: [],
   });
 
-client.login(process.env.PASS);
-
+client.login(process.env.PASS); // what should PASS be? PASS is 
+/*
 app.use(express.json());
 
 app.post("/webhook", async (req, res) => {
@@ -34,4 +48,4 @@ app.post("/webhook", async (req, res) => {
     console.log("This is Not Moralis");
     return res.status(400).json();
   }
-});
+});*/
