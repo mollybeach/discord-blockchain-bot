@@ -8,3 +8,7 @@ app.post("/webhook", async (request, response) => {
     console.log(body);
     return response.status(200).json();
 });
+
+app.listen(port, () => {
+    console.log(`listening to streams........`);
+});
