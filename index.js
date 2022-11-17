@@ -1,4 +1,5 @@
 const express = require("express");
+const Moralis = require("moralis").default;
 const port = 3000;
 const app = express();
 
@@ -8,7 +9,11 @@ app.post("/webhook", async (request, response) => {
     console.log(body);
     return response.status(200).json();
 });
-
+Moralis.start(
+    {
+        apiKey: process.env.MORALIS_API_KEY
+    }
+)
 app.listen(port, () => {
     console.log(`listening to streams........`);
 });
@@ -29,7 +34,7 @@ app.use(express.json());
 
 app.post("/webhook", async (req, res) => {
   const { body, headers } = req;
-
+ 
   try {
     Moralis.Streams.verifySignature({
       body,

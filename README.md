@@ -9,7 +9,6 @@ Moralis Streams is a Discord bot that allows you to stream events from the block
 
 install ngrok 
 
-
 When you are ready to run your dapp using the command below:
 npm i
 
@@ -80,7 +79,6 @@ go back to your terminal and you should see
 }
 
 go to polygon scan and write to our contract tab
-then go to discord and type !stream
 
 go to chainlist 
 search mumbai
@@ -161,3 +159,13 @@ should clikc write and it should write to the terminal:
   nftTransfers: []
 }
 
+Add a check to make sure it's moralis that is making the call to the webhook
+In the index.js file 
+under the app.post add this code:
+Moralis.start(
+    {
+        apiKey: process.env.MORALIS_API_KEY
+    }
+)
+go to moralis dashboard and get the api key
+put it in the .env file
