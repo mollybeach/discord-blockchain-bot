@@ -29,13 +29,15 @@ Result Should be something like this:
 
 ngrok         
 <br/>                                                                     
-Add Okta or Azure to protect your ngrok dashboard with SSO:  https://ngrok.com/da
+Add Okta or Azure to protect your ngrok dashboard with SSO:  
+<br/>
+https://ngrok.com/da
 <br/>                                                                          
 Session Status online  
 <br/>                                          
 Session Expires 1 hour, 58 minutes 
 <br/>                               
-Terms of Service  https://ngrok.com/tos                             
+Terms of Service  https://ngrok.com/tos
 <br/>
 Version 3.1.0                                  
 <br/>           
