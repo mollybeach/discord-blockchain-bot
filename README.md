@@ -14,19 +14,14 @@ When you are ready to run your dapp using the command below:
 npm i
 <br/>
 
-With Homebrew already installed on your Mac, you can easily install ngrok from the terminal, using this command:
-<br/>
-brew cask install ngrok
-<br/>
-Then run it from the shell using this command:
-<br/>
-ngrok http 3000
-<br/>
-npm run start
-<br/>
+With Homebrew already installed on your Mac, you can easily install ngrok from the terminal, using this command: <br/>
+brew cask install ngrok <br/>
+Then run it from the shell using this command: <br/>
+ngrok http 3000<br/> 
+npm run start <br/>
 Result Should be something like this: <br/>
 ngrok <br/>                                                                     
-Add Okta or Azure to protect your ngrok dashboard with SSO:  <br/>
+Add Okta or Azure to protect your ngrok dashboard with SSO: <br/>
 https://ngrok.com/da <br/>                                                                          
 Session Status online <br/>                                          
 Session Expires 1 hour, 58 minutes <br/>                               
