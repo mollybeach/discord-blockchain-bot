@@ -27,7 +27,7 @@ Session Expires 1 hour, 58 minutes <br/>
 Terms of Service  https://ngrok.com/tos <br/>
 Version 3.1.0 <br/>
 Region United States (us) <br/>
-Latency 99ms <br/>                         
+Latency 99ms <br/>
 Web Interface http://127.0.0.1:4040   <br/>
 Forwarding https://ef01-2601-603-207f-cb00-99ee-cc26-7f0a-410 <br/>
 Connections                   ttl     opn     rt1     rt5     p50     p90 <br/>  
