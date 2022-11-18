@@ -13,21 +13,20 @@ install ngrok
 When you are ready to run your dapp using the command below:
 npm i
 <br/>
-
 With Homebrew already installed on your Mac, you can easily install ngrok from the terminal, using this command: <br/>
 brew cask install ngrok <br/>
 Then run it from the shell using this command: <br/>
 ngrok http 3000<br/> 
 npm run start <br/>
-Result Should be something like this: <br/>
+Result Should be something like this: <br/> 
 ngrok <br/>
 Add Okta or Azure to protect your ngrok dashboard with SSO: <br/>
-https://ngrok.com/da <br/>                                                                          
-Session Status online <br/>                                          
-Session Expires 1 hour, 58 minutes <br/>                               
+https://ngrok.com/da <br/> 
+Session Status online <br/> 
+Session Expires 1 hour, 58 minutes <br/>
 Terms of Service  https://ngrok.com/tos <br/>
-Version 3.1.0 <br/>           
-Region United States (us) <br/>                  
+Version 3.1.0 <br/>
+Region United States (us) <br/>
 Latency 99ms <br/>                         
 Web Interface http://127.0.0.1:4040   <br/>
 Forwarding https://ef01-2601-603-207f-cb00-99ee-cc26-7f0a-410 <br/>
@@ -39,7 +38,6 @@ Adding a New Moralis Stream
 <br/>
 Add a contract address to the stream for example use :
 <br/>
-
 POLYGON_MUMBAI_DONATION_CONTRACT = "0xbD317B46A004CCF0e1773DBFcEE89E77e32D2dB9" 
 <br/>
 https://mumbai.polygonscan.com/address/0xbD317B46A004CCF0e1773DBFcEE89E77e32D2dB9
