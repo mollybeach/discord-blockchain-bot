@@ -19,6 +19,7 @@ Then run it from the shell using this command: <br/>
 ngrok http 3000<br/> 
 npm run start <br/>
 Result Should be something like this: <br/> 
+<img src="./assets/ngrok-terminal">
 ngrok <br/>
 Add Okta or Azure to protect your ngrok dashboard with SSO: <br/>
 https://ngrok.com/da <br/> 
@@ -237,7 +238,6 @@ should click write and it should write to the terminal:
   <br/>
 }
 <br/>
-
 Add a check to make sure it's moralis that is making the call to the webhook
 <br/>
 In the index.js file 
@@ -250,11 +250,49 @@ Moralis.start(
     <br/>
         apiKey: process.env.MORALIS_API_KEY
         <br/>
-    }
-    <br/>
-)
-<br/>
-go to moralis dashboard and get the api key
-<br/>
-put it in the .env file
-<br/>
+    } <br/>
+) <br/>
+go to moralis dashboard and get the api key <br/>
+put it in the .env file <br/>
+then create A new server in discord <br/>
+then go to discord.com/devlopers <br/>
+create a new application <br/>
+give it a name <br/>
+then click on bot tab on the left side bar <br/>
+click add a bot <br/>
+click yes do it <br/>
+then click copy token <br/>
+then go to the .env file and paste the token in the DISCORD_TOKEN field <br/>
+then go to the index.js file and paste the token in the DISCORD_TOKEN field <br/>
+then go back the discord.com/devlopers <br/>
+click on the OAuth2 tab on the left side bar <br/>
+click on bot checkbox <br/>
+then click give send message permission <br/>
+then copy the generated link URL and paste it in the browser <br/>
+then click on the server you want to add the bot to <br/>
+then click authorize <br/>
+you should get a message on your discord server from the bot </br>
+then go to the index.js file and add this code: <br/>
+const Discord = require('discord.js'); <br/>
+const client = new Discord.Client(); <br/>
+client.login(process.env.DISCORD_TOKEN); <br/>
+client.on('ready', () => { <br/>
+    console.log(`Logged in as ${client.user.tag}!`); <br/>
+}); <br/>
+client.on('message', msg => { <br/>
+    if (msg.content === 'ping') { <br/>
+        msg.reply('Pong!'); <br/>
+    } <br/>
+}); <br/>
+then go to the terminal and type node index.js <br/>
+then go to the discord server and type ping <br/>
+then it should reply pong <br/>
+then go to the index.js file and add this code: <br/>
+
+you can go to discord right click channel and you should see copy id <br/>
+if you dont see id o to your profile settings go to advanced and switch on developer mode  <br/>
+then paste the id in the DISCORD_CHANNEL_ID field in the .env file <br/>
+then go to the index.js file and add this code: <br/>
+
+
+
