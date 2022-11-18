@@ -24,41 +24,22 @@ ngrok http 3000
 <br/>
 npm run start
 <br/>
-Result Should be something like this:
-<br/>
-
-ngrok         
-<br/>                                                                     
-Add Okta or Azure to protect your ngrok dashboard with SSO:  
-<br/>
-https://ngrok.com/da
-<br/>                                                                          
-Session Status online  
-<br/>                                          
-Session Expires 1 hour, 58 minutes 
-<br/>                               
-Terms of Service  https://ngrok.com/tos
-<br/>
-Version 3.1.0                                  
-<br/>           
-Region United States (us)              
-<br/>                  
-Latency 99ms                     
-<br/>                         
-Web Interface http://127.0.0.1:4040  
-<br/>                           
-Forwarding https://ef01-2601-603-207f-cb00-99ee-cc26-7f0a-410
-<br/>
-                                                                                
-Connections                   ttl     opn     rt1     rt5     p50     p90     
-<br/>  
-                              0       0       0.00    0.00    0.00    0.00    
-<br/>  
-                      
-Grab the Forwarding URL and add it to the .env file
-<br/>
-Add it to Moralis Dashboard create a webhook to listen to the blockchain events
-<br/>
+Result Should be something like this: <br/>
+ngrok <br/>                                                                     
+Add Okta or Azure to protect your ngrok dashboard with SSO:  <br/>
+https://ngrok.com/da <br/>                                                                          
+Session Status online <br/>                                          
+Session Expires 1 hour, 58 minutes <br/>                               
+Terms of Service  https://ngrok.com/tos <br/>
+Version 3.1.0 <br/>           
+Region United States (us) <br/>                  
+Latency 99ms <br/>                         
+Web Interface http://127.0.0.1:4040   <br/>
+Forwarding https://ef01-2601-603-207f-cb00-99ee-cc26-7f0a-410 <br/>
+Connections                   ttl     opn     rt1     rt5     p50     p90 <br/>  
+                               0       0       0.00    0.00    0.00    0.00  <br/>                       
+Grab the Forwarding URL and add it to the .env file <br/>
+Add it to Moralis Dashboard create a webhook to listen to the blockchain events <br/>
 Adding a New Moralis Stream
 <br/>
 Add a contract address to the stream for example use :
