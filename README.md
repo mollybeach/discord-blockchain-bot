@@ -1,55 +1,77 @@
 #Discord Blockchain Bot
-
+<br/>
 Using Moralis to connect to the blockchain and Discord to connect to the world. 
+<br/>
  https://docs.moralis.io/
-
+ <br/>
 Moralis Streams is a Discord bot that allows you to stream events from the blockchain to Discord.
-
+<br/>
 ## How to use
-
+<br/>
 install ngrok 
-
+<br/>
 When you are ready to run your dapp using the command below:
 npm i
+<br/>
 
 With Homebrew already installed on your Mac, you can easily install ngrok from the terminal, using this command:
-
+<br/>
 brew cask install ngrok
-
+<br/>
 Then run it from the shell using this command:
+<br/>
 ngrok http 3000
+<br/>
 npm run start
-
+<br/>
 Result Should be something like this:
+<br/>
 
-ngrok                                                           (Ctrl+C to quit)
-                                                                                
-Add Okta or Azure to protect your ngrok dashboard with SSO: https://ngrok.com/da
-                                                                                
-Session Status                online                                            
-Session Expires               1 hour, 58 minutes                                
+ngrok         
+<br/>                                                                     
+Add Okta or Azure to protect your ngrok dashboard with SSO:  https://ngrok.com/da
+<br/>                                                                          
+Session Status                online  
+<br/>                                          
+Session Expires               1 hour, 58 minutes 
+<br/>                               
 Terms of Service              https://ngrok.com/tos                             
-Version                       3.1.0                                             
-Region                        United States (us)                                
-Latency                       99ms                                              
-Web Interface                 http://127.0.0.1:4040                             
+<br/>
+Version                       3.1.0                                  
+<br/>           
+Region                        United States (us)              
+<br/>                  
+Latency                       99ms                     
+<br/>                         
+Web Interface                 http://127.0.0.1:4040  
+<br/>                           
 Forwarding                    https://ef01-2601-603-207f-cb00-99ee-cc26-7f0a-410
+<br/>
                                                                                 
-Connections                   ttl     opn     rt1     rt5     p50     p90       
-                              0       0       0.00    0.00    0.00    0.00      
-                        
+Connections                   ttl     opn     rt1     rt5     p50     p90     
+<br/>  
+                              0       0       0.00    0.00    0.00    0.00    
+<br/>  
+                      
 Grab the Forwarding URL and add it to the .env file
+<br/>
 Add it to Moralis Dashboard create a webhook to listen to the blockchain events
+<br/>
 Adding a New Moralis Stream
+<br/>
 Add a contract address to the stream for example use :
+<br/>
 
 POLYGON_MUMBAI_DONATION_CONTRACT = "0xbD317B46A004CCF0e1773DBFcEE89E77e32D2dB9" 
-
-//https://mumbai.polygonscan.com/address/0xbD317B46A004CCF0e1773DBFcEE89E77e32D2dB9
+<br/>
+https://mumbai.polygonscan.com/address/0xbD317B46A004CCF0e1773DBFcEE89E77e32D2dB9
+<br/>
                                     
 <br/>
-forward:                                        add webhook to the end 
+Webhook URL : Fowarding URL from ngrok + /webhook
+<br/>
 Add: WebhookURL: https://ef01-2601-603-207f-cb00-99ee-cc26-7f0a-410a.ngrok.io/webhook
+<br/>
 
 https://mumbai.polygonscan.com/address/0xbD317B46A004CCF0e1773DBFcEE89E77e32D2dB9
 <br/>
