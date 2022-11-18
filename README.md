@@ -254,6 +254,17 @@ Moralis.start(
 ) <br/>
 go to moralis dashboard and get the api key <br/>
 put it in the .env file <br/>
+<br/>
+go to index.js file and add this code: <br/>
+  try {
+    Moralis.Streams.verifySignature({
+      body,
+      signature: headers["x-signature"],
+    });
+<br/>
+check on post man if it works <br/>
+<br/>   
+if says not moralis in the terminal then it works  <br/>
 then create A new server in discord <br/>
 then go to discord.com/devlopers <br/>
 create a new application <br/>
