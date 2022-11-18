@@ -20,7 +20,7 @@ Then run it from the shell using this command: <br/>
 ngrok http 3000<br/> 
 npm run start <br/>
 Result Should be something like this: <br/>
-ngrok <br/>                                                                     
+ngrok <br/>
 Add Okta or Azure to protect your ngrok dashboard with SSO: <br/>
 https://ngrok.com/da <br/>                                                                          
 Session Status online <br/>                                          
