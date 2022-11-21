@@ -273,7 +273,7 @@ then click on bot tab on the left side bar <br/>
 click add a bot <br/>
 click yes do it <br/>
 then click copy token <br/>
-then go to the .env file and paste the token in the DISCORD_TOKEN field <br/>
+then go to the .env file and paste token in the DISCORD_TOKEN field <br/>
 then go to the index.js file and paste the token in the DISCORD_TOKEN field <br/>
 then go back the discord.com/devlopers <br/>
 click on the OAuth2 tab on the left side bar <br/>
