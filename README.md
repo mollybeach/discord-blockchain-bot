@@ -305,5 +305,3 @@ if you dont see id o to your profile settings go to advanced and switch on devel
 then paste the id in the DISCORD_CHANNEL_ID field in the .env file <br/>
 then go to the index.js file and add this code: <br/>
 
-
-
